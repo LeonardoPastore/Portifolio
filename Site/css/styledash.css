@@ -1,0 +1,922 @@
+/* ================================================== Geral ================================================== */
+html, body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sf_Display', sans-serif;
+
+}
+body {
+    background-color: #242424;
+}
+/* Cor Placeholder */
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder{
+    color: #9bcdd7;
+ }
+/* Toolbar */
+::-webkit-scrollbar-track {
+    background-color: #242424;
+}
+::-webkit-scrollbar-track-piece{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: #242424;
+}
+::-webkit-scrollbar-thumb {
+    background: #9bcdd7;
+    border-radius: 30px;
+}
+/* Geral */
+input:focus, textarea:focus, select:focus, button:focus{
+    outline: none;
+}
+a, li, a:hover{
+    text-decoration: none;
+    list-style: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-collumn {
+    display: flex;
+    flex-direction: column;
+}
+.font_corp{
+    color: #9bcdd7;
+}
+.font_corp2{
+    color: #d34544;
+}
+.font_white{
+    color: #E3DBCB;
+}
+.font_bold{
+    font-weight: bold;
+}
+.responsive {
+    width: 100%;
+    max-height: 100%;
+}
+.btn{
+    background: #242424;
+    border-radius: 50px;
+    height: 43px;
+    color: #9bcdd7;
+    padding: 0px 20px;
+    border: none;
+    box-shadow: 2px 1px 0.2em rgba(0, 0, 0, 0.03);
+    width: 100%;
+}
+.btn:hover{
+    color: #242424;
+    background: #9bcdd7;
+    box-shadow: 2px 1px 0.2em #E3DBCB;
+}
+.btnCancelar:hover{
+    color: #E3DBCB;
+    background: #dc3545;
+    box-shadow: 2px 1px 0.2em #E3DBCB;
+}
+.btn:hover span{
+    color: #9bcdd7;
+}
+.btn_reverse{
+    background: #9bcdd7;
+    border-radius: 50px;
+    color: #242424;
+    padding: 0px 20px;
+    border: none;
+    box-shadow: 2px 1px 0.2em rgba(0, 0, 0, 0.03);
+    width: 100%;
+    min-height: 48px;
+}
+.btn_reverse:hover{
+    color: #9bcdd7;
+    background: #242424;
+    box-shadow: 2px 1px 0.2em #9bcdd7;
+}
+.btn_reverse_corp2{
+    background: #d34544;
+    border-radius: 50px;
+    color: #242424;
+    padding: 0px 20px;
+    border: none;
+    box-shadow: 2px 1px 0.2em rgba(0, 0, 0, 0.03);
+    width: 25%;
+    min-height: 48px;
+}
+.btn_reverse_corp2:hover{
+    color: #d34544;
+    background: #242424;
+    box-shadow: 2px 1px 0.2em #d34544;
+}
+.btn_input {
+    background: #242424;
+    border-radius: 50px;
+    color: #d34544;
+    padding: 0px 30px;
+    border: none;
+    box-shadow: 0px 0px 0.5rem #9bcdd7;
+    min-height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.btn_input:hover, .btn_input:focus {
+    box-shadow: 0px 0px 1rem #9bcdd7;
+    color: #9bcdd7;
+}
+.input_login{
+  background: #242424;
+  border: none;
+  color: #9bcdd7;
+  padding: 0;
+}
+.btn_input i{
+    color: #E3DBCB;
+}
+.btn_input:hover i{
+    color: #9bcdd7;
+}
+.hide{
+    display: none !important;
+}
+.desk{
+  display: block;
+}
+.mob{
+  display: none;
+}
+.loadMouse{
+    cursor: wait;
+}
+/* ================================================== Fim Geral ================================================== */
+/* ================================================== Menu ================================================== */
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #242424;
+    width: 93px;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.9;
+    box-shadow: 1px 1px 1px #9bcdd7;
+}
+.menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 93px;
+    padding-top: 50px;
+    height: 100%;
+    color: #9bcdd7;
+    box-shadow: 2px 1px 1rem;
+}
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.logo {
+    padding-bottom: 50px;
+    
+}
+.menu_item {
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 93px;
+    height: 62px;
+    color: #E3DBCB;
+    font-size: 25px;
+}
+.ativo, .menu_item:hover{
+    background-color: #9bcdd7;
+    color: #242424;
+}
+.menu_item.logo:hover{
+    background-color: #9bcdd7;
+}
+.links img{
+    margin: auto;
+}
+.menu_logo{
+    padding-bottom: 1rem;
+    display: flex;
+}
+ul.menu li a {
+    font-size: 1rem;
+}
+.top-table {
+    color: #E3DBCB;
+    font-size: 1rem;
+    font-weight: bold;
+}
+main {
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
+    color: #E3DBCB;
+}
+.iconLoading{
+    font-size: 4rem;
+    color: #d34544;
+}
+.responsive {
+    width: 100%;
+    max-height: 100%;
+}
+.btn_menu{
+    background: none;
+}
+/* ================================================== LOGIN ================================================== */
+.login_container, .login_esqueci{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================================================== Titulos ================================================== */
+.name-title {
+    justify-content: flex-start;
+}
+.name-title p {
+    font-size: 26px;
+}
+.title-page {
+    display: flex;
+    flex-direction: column;
+}
+.title-page h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+/* ================================================== Cards Dash ================================================== */
+.filter_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.card_status{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    border-radius: 100px;
+    box-shadow: 2px 1px 0.5rem #9bcdd7;
+    background: none;
+}
+.card_status h1{
+    color: #9bcdd7;
+    font-size: 3rem;
+}
+.card_status p{
+    color: #9bcdd7;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card_status i{
+    color: #9bcdd7;
+    font-size: 2rem;
+}
+.card_status:hover, .card_status:hover h1, .card_status:hover p, .card_status:hover i{
+    color: #242424;
+    background-color: #d34544;
+}
+.card_statusAtivo, .card_statusAtivo:focus{
+    color: #242424;
+    background-color: #d34544;
+    cursor: default;
+    border-radius: 100px;
+}
+.card_statusAtivo h1, .card_statusAtivo p, .card_statusAtivo i{
+    color: #242424;
+}
+/*============================================== Form ===================================================*/
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.form-select {
+    width: 100%;
+    background-color: #242424;
+    border: 1px solid #9bcdd7;
+    color: #E3DBCB;
+    border-radius: 6px;
+    padding: 15px;
+}
+.bottom-border {
+    background-color: #242424;
+    border: none;
+    border-bottom: 1px solid #d34544;
+    color: #6C757D;
+}
+.bottom-border:focus {
+    box-shadow: 0 0 0 0.1rem #9bcdd7;
+    background-color: #242424;
+    color: #6C757D;
+}
+.btn-form {
+    background-color: #9bcdd7;
+    color: #242424;
+    border: 1px solid #9bcdd7;
+    border-radius: 69px;
+    padding: 12px 24px;
+    margin: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+.btn-form:hover {
+    color: #9bcdd7;
+    background-color: #242424;
+    border: 1px solid #d34544;
+}
+.btn-form-reverse {
+    background-color: #242424;
+    color: #E3DBCB;
+    border: 1px solid #9bcdd7;
+    border-radius: 69px;
+    padding: 12px 24px;
+    margin: 0 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+.btn-form-reverse:hover {
+    color: #9bcdd7;
+    background-color: #242424;
+}
+input:focus {
+    border-color: #9bcdd7;
+}
+/*============================================== Fim Form ===================================================*/
+/*============================================== Buttons ===================================================*/
+.cont_btn {
+    /* justify-content: flex-end; */
+    display: flex;
+    align-items: center;
+}
+.cont_btnExport {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 1rem;
+    margin-right: 2rem;
+}
+.btn-export {
+    margin: 0 10px;
+}
+.btn-export img {
+    margin-top: 0;
+}
+.filtro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.date{
+    display: flex;
+    align-items: center;
+}
+#data_inicial, #data_final, .data {
+    border: 1px solid #6C757D;
+    box-sizing: border-box;
+    filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.06));
+    border-radius: 69px;
+    margin: 10px;
+    padding: 15px;
+    color: #6C757D;
+    background: none;
+}
+.select {
+    border: 1px solid #6C757D;
+    box-sizing: border-box;
+    filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.06));
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    color: #6C757D;
+    background: none;
+    width: 100%;
+}
+.btn-grafi {
+    border: 1px solid #9bcdd7;
+    box-sizing: border-box;
+    filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.06));
+    border-radius: 69px;
+    padding: 15px;
+    color: #E3DBCB;
+    background: #9bcdd7;
+}
+.btn-grafi:hover {
+    color: #9bcdd7;
+    background: none;
+}
+/*============================================== Buttons ===================================================*/
+/* ================================================== TABELA ================================================== */
+.conteiner {
+    width: 85%;
+    padding: 50px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+.table{
+    position: relative;
+    border: 1px solid #9bcdd7;
+}
+.table tr {
+    box-shadow: 1px 1px 0.2em #242424;
+    border-radius: 100px;
+}
+.table tr th {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    color: #9bcdd7;
+}
+.table tr td {
+    padding: 1.2rem;
+    font-size: 1rem;
+    color: #9bcdd7;
+}
+.table .odd{
+    background-color: #121212;
+}
+.table .even{
+    background-color: #242424;
+}
+tfoot .rounded{
+    box-shadow: none;
+}
+thead .rounded{
+    box-shadow: none;
+    
+}
+.rounded th {
+    color: #9bcdd7;
+}
+.table thead.top-table th {
+    text-align: center;
+    text-size-adjust: 12px;
+}
+.table .top-table {
+    color: #9bcdd7;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: none;
+}
+.table tbody tr {
+    color: #242424;
+    text-align: center;
+    font-weight: bold;
+}
+.paginate_button{
+    margin: 0 3px;
+}
+.paginate_button.page-item.active {
+    font-size: 13px;
+}
+.page-item.active .page-link {
+    z-index: 1;
+    color: #E3DBCB;
+    background-color: #242424;
+    box-shadow: 2px 1px 0.2em #242424;
+    border-radius: 15px;
+}
+.page-item.active .page-link:focus{
+    box-shadow: 2px 1px 0.2em #242424;
+}
+.page-item.disabled .page-link{
+    background-color: #242424;
+    color: #9bcdd7;
+    border: none;
+    font-size: 13px;
+}
+.paginate_button.page-item a {
+    background-color: #242424;
+    font-size: 13px;
+    border: none;
+    color: #9bcdd7;
+    border-radius: 15px;
+}
+.paginate_button.page-item a:hover{
+    box-shadow: 2px 1px 0.2em #242424;
+}
+.dt-buttons{
+    display: none;
+}
+.dataTables_wrapper {
+    margin-top: 10px;
+    background: #242424;
+    box-shadow: 1px 1px 0.2em #242424;
+    padding: 1rem;
+    border-radius: 32px;
+    padding-top: 4rem;
+}
+.dataTables_info{
+    color: #9bcdd7;
+}
+.dataTables_length {
+    display: none;
+}
+.details-control {
+    display: none;
+}
+.dataTables_filter {
+    padding: 100px; 
+    position: relative;
+    top: 25px;
+    color: #9bcdd7;
+}
+.dataTables_filter label {
+    font-size: 16px;
+}
+.dataTables_filter input {
+    background: #121212;
+    border-radius: 50px;
+    height: 48px;
+    width: 350px !important;
+    color: #9bcdd7;
+    padding: 0px 20px;
+    padding-right: 40px;
+    border: none;
+    box-shadow: 2px 1px 0.2em rgba(0, 0, 0, 0.03);
+}
+.dataTables_filter input:hover, .dataTables_filter input:focus {
+    background: #242424;
+    box-shadow: 0 0 2rem #E3DBCB;
+    color: #9bcdd7;
+}
+.dataTables_filter label:after{
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 22px;
+    right: -13px;
+    top: 13px;
+    position: absolute;
+}
+.form-control-sm:focus label:after{
+    background-image: none;
+    background-color: #242424;
+}
+/* ================================================== FIM TABELA ================================================== */
+/* ============================================ Icons ============================================================ */
+.icon-menu{
+    border-radius: 50%;
+    color: #E3DBCB;
+    background-color: #242424;
+    box-shadow: 2px 1px 0.2em rgba(0, 0, 0, 0.3);
+}
+.icon-menu:hover{
+    color: #9bcdd7;
+    box-shadow: 2px 1px 0.2em #9bcdd7;
+}
+.icon-menuRefresh{
+    padding: 0.7rem 1rem;
+    font-size: 13px;
+}
+.icon-menuXls{
+    padding: 0.3rem 1rem;
+    font-size: 22px;
+}
+.icon{
+    font-size: 5rem;
+    color: #E3DBCB;
+}
+.icon_data{
+    font-size: 1.2rem;
+}
+.icon_data:hover{
+    color: #9bcdd7;
+}
+/* ============================================ FIM Icons ============================================================ */
+/*============================================== Modal ===================================================*/
+#modal, #modal2, .modalIzi, .modal  {
+    background-color: #121212;
+    text-align: center;
+    max-height: 50vh;
+    max-width: 992px !important;
+    position: fixed;
+    box-shadow: 0px 0px 190px;
+    border-top-left-radius: 45px !important;
+    border-bottom-right-radius: 45px !important;
+    box-shadow: 0 0 2rem white;
+}
+.modal{
+    /* position: relative; */
+    margin: 10rem auto;
+}
+#modalLogout{
+    max-height: 40vh;
+}
+.modal-dialog{
+    max-width: 100%;
+    margin: 0;
+    background: #242424;
+}
+.modal-content{
+    background: #121212;
+}
+.close{
+    color: #E3DBCB;
+    opacity: 1;
+}
+.modalIzi{
+    max-height: 90vh;
+}
+img.happy-top {
+    margin: 15px;
+    width: 100%;
+}
+.modal-line {
+    width: 100%;
+}
+.modal-wrapper {
+    display: flex;
+    height: 48vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal a.close-modal {
+    top: 2px;
+    right: 2px;
+}
+a.btn-fechar {
+    position: absolute;
+    right: 26px;
+    top: 15px;
+    color: #E3DBCB;
+    text-decoration: none;
+}
+#respostaPedido {
+  color: #E3DBCB;
+  font-weight: bold;
+}
+.pedido-wb {
+  color: #E3DBCB;
+}
+#waybill {
+    color: #9bcdd7;
+    font-size: 1.3rem;
+}
+.btn_modal a {
+    background-color: #9bcdd7;
+    color: #E3DBCB;
+    border: 1px solid #9bcdd7;
+    border-radius: 15px;
+    padding: 12px 24px;
+    margin: 0 10px;
+}
+.btn_modal a:hover {
+    background-color: #242424;
+    color: #9bcdd7;
+}
+#etiqueta {
+  background-color: #9bcdd7;
+  color: #E3DBCB;
+  border: 1px solid #9bcdd7;
+  border-radius: 15px;
+  padding: 12px 24px;
+  margin: 0 10px;
+}
+#etiqueta:hover {
+    background-color: #242424;
+    color: #9bcdd7;
+}
+.iconModal{
+    font-size: 6rem;
+    color: #E3DBCB;
+}
+.iconDetalhesModal{
+    font-size: 2rem;
+    color: #9bcdd7;
+}
+.whatsModal{
+    font-size: 1.5rem;
+    color: #6C757D;
+    font-weight: bold;
+}
+.whatsModal:hover{
+    color: #9bcdd7;
+}
+h1.title-modalWay {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+.msg {
+    color: #9bcdd7;
+}
+/*==============================================Fim Modal ===================================================*/
+/*============================================== Modal Pedidos e Dashboard ===================================================*/
+#modalPedidos .modal-wrapper, #modalDashboard .modal-wrapper{
+    height: 80vh;
+}
+/*============================================== Fim Modal Pedidos e Dashboard ===================================================*/
+/* ============================================ Loading ============================================================ */
+.loadingOff {
+    display: none;
+}
+.switchbox {
+    position: relative;
+    width: 120px;
+    height: 240px;
+}
+.switchbox {
+    animation: spin 2s infinite linear;
+}
+.switch {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #9bcdd7;
+    border-radius: 20px;
+    animation: cross 2s infinite linear;
+}
+#switch2 {
+    animation-delay: -1s;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes cross {
+    50% {
+        margin-left: 60px;
+    }
+}
+/* ============Media================= */
+@media (max-width: 1260px) {
+    .name-title p {
+        font-size: 22px;
+    }
+    .title-page h1 {
+        font-size: 22px;
+    }
+}
+/* ============================================ Loading ============================================================ */
+/*============================================== Cards Map ===================================================*/
+.card_mob{
+    margin-bottom: 1rem!important;
+    border-radius: 15px;
+    box-shadow: 0 0 0.5rem #9bcdd7;
+    padding: 1rem;
+    color: #fff;
+}
+.btnMore{
+    background: #9bcdd7;
+    border: none;
+    color: #fff;
+    padding: 0.3rem;
+    font-size: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.hideCard{
+    display: none;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+.pagination div{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.pagination div:not(.numbers), .pagination div.numbers div{
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5rem #9bcdd7;
+    color: #E3DBCB;
+}
+.pagination div:not(.numbers):hover, .pagination div.numbers div:hover, .pagination div.numbers div.active{
+    color: #9bcdd7;
+}
+/*============================================== Fim Cards Map ===================================================*/
+/*============================================== Responsivo ===================================================*/
+.mob{
+    display: none;
+  }
+.mobHide{
+    display: none;
+}
+@media (max-width: 1100px){
+    #login{
+        background-image: none;
+        background-color: #242424;
+    }
+    #tabela_pedidos_wrapper{
+        display: none;
+    }
+    .desk{
+        display: none;
+    }
+    .mob{
+        display: block;
+    }
+    main {
+        padding: 0;
+    }
+    .flex-end{
+        justify-content: center;
+    }
+}
+@media (max-width: 992px){
+    .deskHide{
+        display: none;
+    }
+    .mobHide{
+        display: block;
+    }
+    .date{
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px){
+    .center_mob{
+        display: flex;
+        justify-content: center;
+    }
+    .smMobHide{
+        display: none;
+    }
+}
+@media (max-width: 576px){
+    .card-locker{
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .card-lockerAtivo{
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .number-locker{
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+}
+.header_mob{
+    background-color: #242424;
+    border-radius: 5px;
+    box-shadow: 0 0 0.5rem #9bcdd7;
+}
+.btnBar{
+    background: none;
+    color: #9bcdd7;
+    border: 1px solid #9bcdd7;
+    border-radius: 50px;
+}
+.menuItem_mob{
+    color: #6C757D;
+    padding: 0.5rem;
+}
+.menuItem_mob:hover{
+    color: #9bcdd7;
+}
+/*============================================== Fim Responsivo ===================================================*/
