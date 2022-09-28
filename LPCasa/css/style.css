@@ -1,0 +1,548 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+h1{
+  position: absolute;
+  width: 192px;
+  height: 22px;
+  left: 878px;
+  top: 64px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #BDBDBD;
+}
+h2{
+  text-align: left;
+  position: absolute;
+  width: 297px;
+  height: 50px;
+  left: 878px;
+  top: 87px;
+  font-family: Dutch766 BT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 50px;
+  letter-spacing: -0.04em; 
+  color: #111111;  
+}
+h3{
+  position: absolute;
+  width: 176px;
+  height: 28px;
+  left: 15px;
+  top: 520px;
+  font-family: Dutch766 BT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 29px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+}
+
+p{ 
+  position: absolute;
+  width: 1262px;
+  height: 81px;
+  left: 329px;
+  top: 167px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  letter-spacing: -0.04em;
+  color: #111111; 
+}
+
+/*  NAVBAR  */
+.mainmenu{
+  width: 1920px;
+  height: 74px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(24px);
+}
+.bttnorcamento{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+  position: absolute;
+  left: 78.07%;
+  right: 10.42%;
+  top: 15%;
+  bottom: 20.27%;
+  height: 43px;
+  width: 221px;
+  border-radius: 5px;
+  padding: 15px, 32px, 11px, 32px;
+  background: #111111;
+}
+.bttnorcamento a{
+  position: static;
+  left: 14.48%;
+  right: 14.48%;
+  top: 20%;
+  bottom: 25.58%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+.icons-ctt{
+  position: absolute;
+  left: 46.15%;
+  right: 46.15%;
+  top: 36.49%;
+  bottom: 33.78%;
+  
+}
+.icons-ctt a{
+  font-size: 21px;
+  height: 30px;
+  width: 30px;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+}
+.logo{
+  height: 46px;
+  width: 221px;
+  left: 200px;
+  top: 14px;
+  border-radius: 0px;
+  position: absolute;
+  left: 10.42%;
+  right: 78.07%;
+  top: 18.92%;
+  bottom: 18.92%;
+}
+/*  PAINEL  */
+.banner{
+  height: 999px;
+  width: 1920px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(EOG_5356.jpg);
+}
+.banner-img1{
+  height: 760px;
+  width: 996px;
+  left: 56px;
+  top: 148px;
+  border-radius: 15px;
+  position: absolute;
+  left: 2.92%;
+  right: 45.21%;
+  top: 14.81%;
+  bottom: 9.11%;
+  background: url(EOG_5356.jpg);
+  border-radius: 15px;
+}
+.banner-img2{
+  height: 760px;
+  width: 996px;
+  left: 89px;
+  top: 148px;
+  border-radius: 15px;
+  position: absolute;
+  left: 4.67%;
+  right: 43.45%;
+  top: 15.41%;
+  bottom: 13.47%;
+  background: url(EOG_5356.jpg);
+  opacity: 0.7;
+  border-radius: 15px;
+  transform: matrix(1, 0.09, -0.08, 1, 0, 0);
+}
+/*  SOBRE NOS  */
+.sobrenos{
+  position: absolute;
+  width: 874px;
+  height: 642px;
+  left: 100px;
+  top: 1050px;
+  background: url(EOG_5303.jpg);
+  border-radius: 15px;
+}
+
+.textosobrenos h2{
+  left: 925px;
+}
+.textosobrenos p{
+  height: 361px;
+  width: 586px;
+  left: 925px;
+  top: 97px;
+}
+/*    NOSSO ESPAÇO    */
+.nossoespaco{
+  position: absolute;
+  width: 1920px;
+  height: 880px;
+  left: 0px;
+  top: 1761px;
+  background: #F5F9FF;
+}
+.textonossoespaco h2{
+  left: 825px;
+}
+.textonossoespaco p{
+  text-align: center;
+  width: 1262px;
+  height: 81px;
+  left: 329px;
+}
+[type=radio] {
+  display: none;
+}
+.slider {
+  top: 300px;
+  height: 25vw;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.slider label {
+  margin: auto;
+  width: 698px;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+  left: 0; right: 0;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+#s3:checked ~ #slide1,#s1:checked ~ #slide3{
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-60%,0,-200px) rotate(-15deg) scaleY(1);
+}
+
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2{
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-60%,0,-200px) rotate(-15deg) scaleY(1);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3{
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0) scaleY(1.1) ;
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide1{
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(60%,0,-200px) rotate(15deg) scaleY(1) ;
+}
+
+#s1:checked ~ #slide3
+#s3:checked ~ #slide1{
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(30%,0,-200px) scaleY(1);
+}
+
+#slide1 { background: url(slider1.png) }
+#slide2 { background: #4CAF50 }
+#slide3 { background: #CDDC39 }
+/* NOSSO EVENTO  */
+.eventos{
+  position: absolute;
+  width: 1920px;
+  height: 880px;
+  left: 0px;
+  top: 2635px;
+  background: #FFFFFF;
+}
+.logoeventos h1{
+  left: 200px;
+}
+.textoeventos h2{
+  left: 227px;
+}
+.textoeventos p{
+  width: 586px;
+  height: 290px;
+  left: 227px;
+}
+.casamento{
+  height: 603px;
+  width: 228px;
+  left: 975px;
+  top: 60px;
+  border-radius: 10px;
+  position: absolute;
+  width: 228px;
+  height: 603px;
+  left: 975px;
+  top: 60px;
+  background: url(casamento.jpg);
+  border-radius: 10px;
+}
+.casamento h3{
+  left: 15px;
+  top: 520px;
+}
+.debutante{
+  height: 286px;
+  width: 487px;
+  left: 1233px;
+  top: 377px;
+  border-radius: 10px;
+  position: absolute;
+  width: 487px;
+  height: 286px;
+  left: 1233px;
+  top: 377px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.67%, rgba(0, 0, 0, 0.8) 100%), url(debutante.jpg);
+  border-radius: 10px;
+}
+.debutante h3{
+  left: 100px;
+  top: 200px;
+}
+.corporativo{
+  height: 286.5px;
+  width: 229px;
+  left: 1233px;
+  top: 60px;
+  border-radius: 10px;
+  position: absolute;
+  width: 229px;
+  height: 286.5px;
+  left: 1233px;
+  top: 60px;
+  background: url(corporativo.jpg);
+  border-radius: 10px;
+}
+.corporativo h3{
+  left: 20px;
+  top: 200px;
+}
+.aniversario{
+  height: 286.5px;
+  width: 229px;
+  left: 1492px;
+  top: 60px;
+  border-radius: 10px;
+  position: absolute;
+  width: 229px;
+  height: 286.5px;
+  left: 1492px;
+  top: 60px;
+  background: url(aniversario.png);
+  border-radius: 10px;
+}
+.aniversario h3{
+  left: 20px;
+  top: 200px;
+}
+/*  CONTATO  */
+.contato{
+  height: 1058px;
+  width: 1920px;
+  left: 0px;
+  top: 3364px;
+  border-radius: 0px;
+  position: absolute;
+  width: 1920px;
+  height: 1058px;
+  left: 0px;
+  top: 3364px;
+  background: #F5F9FF;
+}
+.maps{
+  height: 585px;
+  width: 874px;
+  left: 200px;
+  top: 94px;
+  border-radius: 10px;
+  position: absolute;
+  width: 874px;
+  height: 585px;
+  left: 200px;
+  top: 94px;
+  background: url(maps.jpg);
+  border-radius: 10px;
+}
+.logomaps h1{
+  width: 220px;
+  height: 22px;
+  left: 200px;
+  top: 735px;
+}
+.textomaps h2{
+  left: 220px;
+  top: 761px; 
+}
+.textomaps p{
+  width: 846px;
+  height: 49px;
+  left: 228px;
+  top: 847px;
+}
+.logoform h1{
+  width: 155px;
+  height: 22px;
+  left: 1160px;
+  top: 60px;
+}
+.textoform h2{
+  left: 1163px;
+  top: 82px;
+}
+.textoform p{
+  text-align: left;
+  width: 586px;
+  height: 93px;
+  left: 1163px;
+}
+.formcontato{
+  position: absolute;
+  width: 500px;
+  height: 800px;
+  left: 1150px;
+  top: 285px;
+
+}
+.campo{
+    font-family: sans-serif;
+    font-size: 1em;
+    border-radius: 5px;
+
+}
+.button.is-link{
+  width: 500px;
+  background: #000;
+}
+/*  FOOTER */
+.footer{
+  height: 347px;
+  width: 1920px;
+  left: 0px;
+  top: 4420px;
+  border-radius: 0px;
+  position: absolute;
+  bottom: 0%;
+  background: #FFFFFF;
+}
+.direitofooter h2{
+  height: 41.px;
+  width: 28.px;
+  left: 200px;
+  top: 61px;
+  border-radius: 0px;
+  position: absolute;
+  color: #111111;
+}
+.direitofooter p{
+  height: 110px;
+  width: 487px;
+  left: 200px;
+  top: 136px;
+  
+}
+.meiofooter h2{
+  height: 31px;
+  width: 118px;
+  left: 975px;
+  top: 60px;
+  font-size: 26px;
+}
+.meiofooter ul {
+  height: 96px;
+  width: 129px;
+  left: 975px;
+  top: 111px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  position: absolute;
+}
+.meiofooter ul a{
+  color: #111111;
+}
+.esquerdofooter h2{
+  height: 31px;
+  width: 114px;
+  left: 1606px;
+  top: 60px;
+  font-size: 26px;
+}
+.icons-footer{
+  position: absolute;
+  left: 82%;
+  top: 36.49%;
+  bottom: 33.78%;
+}
+.icons-footer a{
+  font-size: 21px;
+  height: 30px;
+  width: 30px;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+}
+.barrafoote{
+  height: 0px;
+  width: 1521px;
+  left: 200px;
+  top: 286px;
+  border-radius: nullpx;
+  position: absolute;
+  left: 10.42%;
+  right: 10.36%;
+  top: 82.42%;
+  bottom: 17.58%;
+  border: 1px solid #CECECE;
+}
+.cop p{
+height: 30px;
+width: 487px;
+left: 200px;
+top: 303px;
+}
+.dev p{
+height: 30px;
+width: 138px;
+left: 1550px;
+top: 303px;
+font-size: 17px;
+}
